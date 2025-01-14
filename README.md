@@ -75,7 +75,7 @@ The two patch files ensure the required security system is chosen (mbedtls) and 
 
 Firstly we need to copy the files **onvif_presetsXM530.sh** and **onvif.conf** to our copy of the firmware.
 
-Copy the file **[onvif_presetsXM530.sh](https://github.com/cdg123/OpenIPC-Onvif-XM530/blob/main/onvif_presetsXM530.sh)** into your local **general/package/onvif-simple-server/files** directory and **[onvif.conf](https://github.com/cdg123/OpenIPC-Onvif-XM530/blob/main/onvif.conf)** to the same location overwriting the existing file.
+Copy the file **[onvif_presetsXM530.sh](https://github.com/cdg123/OpenIPC-Onvif-XM-530/blob/main/onvif_presetsXM530.sh)** into your local **general/package/onvif-simple-server/files** directory and **[onvif.conf](https://github.com/cdg123/OpenIPC-Onvif-XM-530/blob/main/onvif.conf)** to the same location overwriting the existing file.
 
 Now update the **onvif-simple-server.mk** file by inserting the line
 
@@ -90,7 +90,7 @@ At the time of testing this setup I couldn't see an obvious way to get Majestic 
 
 To achieve this we are going to create a script to load the httpd deamon on port 8080 in the same way the other modules are started using init.d.
 
-Copy the script **[S96onvifhttpd](https://github.com/cdg123/OpenIPC-Onvif-XM530/blob/main/S96onvifhttpd)** to the **onvif-simple-server/files** directory as in the step above
+Copy the script **[S96onvifhttpd](https://github.com/cdg123/OpenIPC-Onvif-XM-530/blob/main/S96onvifhttpd)** to the **onvif-simple-server/files** directory as in the step above
 
 Now add an additional entry to the onvif makefile so the S96onvifhttpd script file gets copied to the /etc/init.d folder during the build.
 
