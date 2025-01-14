@@ -182,9 +182,9 @@ If you are using the Windows version of the ONVIF Device Manager then it will di
 If you select the PTZ control link then you will get the obvious controls for up, down, left, right. In the Settings box, bottom right, there is a button to Set Home, which is at the current camera position, and by entering a name in the text box below you can create a preset, again at the current camera location by hitting the set preset button. After a short period you should see the name appear as a button in the bottom left hand side box with the Home button at the top. The Home button should take you to your home position. To use the presets you first click on one and then use the Goto button
 
 ## Security
-By default there is no security configured for the http interaction with the onvif server however to see the image snapshot and rtsp streams in an onvif client you must have provided the camera username password to get them.
+By default there is no security configured for the onvif xml interaction with the onvif server however to see the image snapshot and rtsp streams in an onvif client you must have provided the camera username password to get them via the majestic RTSP streams.
 
-It is recommend to enable the simple username/password security by editting the onvif.conf file located at /etc/onvif.conf file by entering
+It is recommend to enable the onvif username/password security by editting the onvif.conf file located at /etc/onvif.conf file by entering
 
     vi onvif.conf
 
